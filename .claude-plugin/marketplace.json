@@ -1,0 +1,14 @@
+{
+  "name": "agentshelf",
+  "owner": {
+    "name": "xelA31B"
+  },
+  "description": "Single-plugin marketplace by xelA31B: Agentic commerce audit: check against public standards (schema.org Product/Offer, return and shipping policies, merchant feeds, robots.txt, llms.txt, OpenAPI, OAuth, MCP) whether AI agents can find, understand and buy from your store, booking site or API. Evidence for every finding, a simulated agent shopping test, ready-to-paste fixes and scheduled re-checks.",
+  "plugins": [
+    {
+      "name": "agentshelf",
+      "source": "./",
+      "description": "Agentic commerce audit: check against public standards (schema.org Product/Offer, return and shipping policies, merchant feeds, robots.txt, llms.txt, OpenAPI, OAuth, MCP) whether AI agents can find, understand and buy from your store, booking site or API. Evidence for every finding, a simulated agent shopping test, ready-to-paste fixes and scheduled re-checks."
+    }
+  ]
+}

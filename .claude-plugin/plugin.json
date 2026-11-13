@@ -1,0 +1,29 @@
+{
+  "name": "agentshelf",
+  "displayName": "AgentShelf",
+  "version": "0.1.0",
+  "description": "Agentic commerce audit: check against public standards (schema.org Product/Offer, return and shipping policies, merchant feeds, robots.txt, llms.txt, OpenAPI, OAuth, MCP) whether AI agents can find, understand and buy from your store, booking site or API. Evidence for every finding, a simulated agent shopping test, ready-to-paste fixes and scheduled re-checks.",
+  "author": {
+    "name": "xelA31B"
+  },
+  "homepage": "https://github.com/xelA31B/agentshelf",
+  "repository": "https://github.com/xelA31B/agentshelf",
+  "documentationUrl": "https://github.com/xelA31B/agentshelf#readme",
+  "supportUrl": "https://github.com/xelA31B/agentshelf/issues",
+  "privacyPolicyUrl": "https://github.com/xelA31B/agentshelf/blob/main/PRIVACY.md",
+  "termsOfServiceUrl": "https://github.com/xelA31B/agentshelf/blob/main/TERMS.md",
+  "license": "MIT",
+  "keywords": [
+    "agentic-commerce",
+    "ecommerce",
+    "ai-agents",
+    "schema-org",
+    "structured-data",
+    "product-feed",
+    "shopify",
+    "woocommerce",
+    "geo",
+    "llms-txt"
+  ],
+  "icon": ".claude-plugin/icon.png"
+}
