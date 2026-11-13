@@ -38,3 +38,7 @@ Offer what the findings require (default: the first four):
 For each asset: the code or text block, where to put it, who usually does it (admin, developer, app/plugin for the platform) and how to validate it (e.g. a public structured-data testing tool, feed diagnostics).
 
 Close with one line offering to re-run `agent-commerce-audit` after the changes are live.
+
+## Branded document
+
+Start the deliverable with the header block from `references/doc-template.md` and follow its structure. When the environment can render HTML artifacts or files, deliver it with the HTML version of that template; when delivering as a document artifact or markdown, use the header block and the same section structure.
