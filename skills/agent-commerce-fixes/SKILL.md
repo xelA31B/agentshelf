@@ -7,7 +7,7 @@ description: >
   wants the fixes prepared. Also triggers on the same requests in Russian ("исправь магазин для
   ИИ-агентов", "сделай разметку товаров") or Hungarian.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Agent Commerce Fixes
@@ -32,6 +32,7 @@ Offer what the findings require (default: the first four):
 5. **Product feed field mapping** — site data → merchant-feed fields, with gaps listed.
 6. **Action-path fixes** — prioritized list (price before login, guest checkout, form labels, fee transparency).
 7. **API / agent integration brief** — what to document (OpenAPI, OAuth 2.0, limits), and options for an MCP server or agent checkout protocols, with sources checked by web search.
+8. **ChatGPT Wallet readiness brief** — for the site's bot-protection provider: how to allow verified, signed ChatGPT agent requests only (Web Bot Auth) while keeping other controls; removing agent-blocking steps before the card form; questions for the payment provider and fraud tool (agent purchases, `Forwarded` header); Business Hub and OpenAI feed setup steps. Verify each step on OpenAI's and the provider's official pages; link them.
 
 ## Output
 

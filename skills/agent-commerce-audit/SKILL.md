@@ -3,12 +3,12 @@ name: agent-commerce-audit
 description: >
   This skill should be used when the user asks "is my store ready for AI shopping agents", "can ChatGPT
   or Claude buy from my site", "agentic commerce audit", "check my product schema for AI", "is my
-  e-commerce site agent-friendly", "audit my API for AI agents", or wants an assessment of how well an
+  e-commerce site agent-friendly", "is my store ready for ChatGPT Wallet", "can dots buy from my shop", "audit my API for AI agents", or wants an assessment of how well an
   online store, booking site, SaaS website or API can be discovered, understood and used by AI agents.
   Also triggers on the same requests in Russian ("готов ли магазин к ИИ-агентам", "могут ли агенты
   покупать на сайте") or Hungarian.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Agent Commerce Audit
@@ -29,7 +29,7 @@ Ask only for what is missing: site URL, type (online store, booking, SaaS, marke
 
 ## Step 2 — Run the checks
 
-Use `references/standards-checklist.md`. Cover six areas:
+Use `references/standards-checklist.md`. Cover seven areas:
 
 1. **Access for agents** — robots.txt rules for AI crawlers and user-triggered agents, llms.txt, sitemap with product URLs, content readable without client-side JavaScript.
 2. **Product / offer data** — schema.org `Product` and `Offer` JSON-LD on product pages with required properties; consistency between structured data and the visible page (price, currency, availability).
@@ -37,6 +37,7 @@ Use `references/standards-checklist.md`. Cover six areas:
 4. **Feeds** — a product feed following a public merchant-feed specification, linked or discoverable.
 5. **Action path** — can an agent reach the action: stable product URLs, guest checkout or clear sign-up, no login wall before price, accessible form labels, price and total visible before payment. Observe only; do not submit.
 6. **APIs and protocols** — public API documentation (OpenAPI), standard authentication (OAuth 2.0), rate limits documented, an MCP server or other agent integration, support for current agent checkout/payment protocols (verify status by search).
+7. **ChatGPT Wallet readiness** — use `references/chatgpt-wallet.md`: bot-protection provider and signed-agent access, agent-blocking steps before payment, card acceptance, fraud rules and feed/Business Hub (ask the user what cannot be seen from outside). Verify current requirements on OpenAI's official pages first. Give a separate verdict: Ready / Likely ready, unconfirmed / Not ready.
 
 ## Step 3 — Score
 
@@ -49,6 +50,7 @@ Score each area 0–10 using the checklist weights; compute the **Agent-Readines
 
 **Agent-Readiness Score:** X/100 — one-line verdict
 **Can an agent complete a purchase today?** Yes / Partly / No — reason
+**ChatGPT Wallet:** Ready / Likely ready, unconfirmed / Not ready — reason
 
 ## Scorecard
 | Area | Score | Status | Key finding |
@@ -60,7 +62,7 @@ Score each area 0–10 using the checklist weights; compute the **Agent-Readines
 1. … — impact
 
 ## Not checked
-- item — what is needed
+- item — what is needed (a real Wallet purchase is confirmed only by an authorised test order)
 ```
 
 Close with one line offering: run a simulated agent shopping task (`agent-shopping-test`) or generate the fixes (`agent-commerce-fixes`).

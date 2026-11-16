@@ -17,11 +17,13 @@ AI assistants are starting to shop, book and sign up on behalf of people. AgentS
 
 | Skill | What you get |
 |-------|--------------|
-| **agent-commerce-audit** | Agent-Readiness Score 0–100 across access, product data, policies, feeds, action path and APIs. Every finding: standard → what was checked → evidence. |
+| **agent-commerce-audit** | Agent-Readiness Score 0–100 across access, product data, policies, feeds, action path, APIs and ChatGPT Wallet readiness. Every finding: standard → what was checked → evidence. |
 | **agent-shopping-test** | 5 realistic tasks run as an AI shopping agent would (find, understand, compare, policy, act). Read-only — never buys or submits forms. |
-| **agent-commerce-fixes** | Valid JSON-LD (Product, Offer, return and shipping policies, Organization), robots.txt lines, llms.txt, feed mapping, action-path and API recommendations. |
+| **agent-commerce-fixes** | Valid JSON-LD (Product, Offer, return and shipping policies, Organization), robots.txt lines, llms.txt, feed mapping, action-path and API recommendations, ChatGPT Wallet readiness brief. |
 
 Standards used: schema.org, robots.txt (RFC 9309), Sitemaps protocol, llms.txt, public merchant-feed specifications, OpenAPI, OAuth 2.0, Model Context Protocol, WCAG basics. Agent payment protocols are checked against current sources at audit time.
+
+**ChatGPT Wallet (new in 0.2):** OpenAI's agent wallet pays through your existing checkout, so no integration is needed — but bot protection, CAPTCHA before payment or fraud rules can still block agent purchases. AgentShelf checks what is visible from outside (bot-protection provider and signed-agent access, the path to the card form, accepted cards), asks you about the rest (fraud tool, Business Hub, feed) and gives a separate verdict. A real Wallet purchase is confirmed only by an authorised test order.
 
 ## Commands
 
@@ -38,6 +40,7 @@ Type `/` in Claude and pick a command:
 - "Is my store ready for AI shopping agents? shop.example.com"
 - "Проверь, сможет ли ИИ-агент купить товар на моём сайте"
 - "Generate product JSON-LD for my Shopify store"
+- "Is my store ready for ChatGPT Wallet? shop.example.com"
 
 Concise reports in the language of your request, with an option to schedule regular re-checks on your own frequency, day and time.
 

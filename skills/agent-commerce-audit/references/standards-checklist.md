@@ -11,7 +11,7 @@ Weights in brackets. Verify each item on real pages; record the URL and field as
 | Sitemap covers products | Sitemaps protocol (sitemaps.org) | Sitemap referenced in robots.txt and lists product/service URLs |
 | Readable without JavaScript | — | Fetched HTML contains product name, price and description |
 
-## 2. Product / offer data (30%)
+## 2. Product / offer data (25%)
 
 | Check | Standard | Pass when |
 |---|---|---|
@@ -22,7 +22,7 @@ Weights in brackets. Verify each item on real pages; record the URL and field as
 | Ratings (if shown) | `AggregateRating`, `Review` | Only real, visible reviews marked up |
 | Consistency | — | Structured price, currency, availability equal the visible page |
 
-## 3. Policies (20%)
+## 3. Policies (15%)
 
 | Check | Standard | Pass when |
 |---|---|---|
@@ -48,7 +48,7 @@ Weights in brackets. Verify each item on real pages; record the URL and field as
 | Accessible forms | Inputs have labels; buttons have text (WCAG 2.2 basics) |
 | Bot walls | No CAPTCHA on browsing pages (note if present at checkout) |
 
-## 6. APIs and protocols (10%)
+## 6. APIs and protocols (5%)
 
 | Check | Standard | Pass when |
 |---|---|---|
@@ -57,5 +57,17 @@ Weights in brackets. Verify each item on real pages; record the URL and field as
 | Limits and errors | — | Rate limits and error codes documented |
 | Agent integration | Model Context Protocol (MCP) | MCP server or documented agent integration |
 | Agent checkout / payments | Current agent commerce protocols — verify status by web search at audit time | Supported or on the roadmap; cite source |
+
+## 7. ChatGPT Wallet readiness (15%)
+
+Details and current requirements: `chatgpt-wallet.md` (verify on OpenAI's official pages at audit time).
+
+| Check | Standard / reference | Pass when |
+|---|---|---|
+| Signed-agent access | Web Bot Auth (HTTP Message Signatures, RFC 9421); OpenAI agent access guide | Bot protection verifies signed ChatGPT agent requests (Akamai, Cloudflare, HUMAN, Vercel do it automatically) or an exception is configured; no blanket bot wall |
+| No agent-blocking steps | OpenAI accept payments guide | No CAPTCHA, forced account or app-only payment before the card form |
+| Cards accepted | — | Card payments from the supported networks accepted at checkout |
+| Fraud rules | OpenAI Commerce Partner Playbook | Fraud tool or payment provider recognises agent purchases and reads the `Forwarded` header (confirmed by the user) |
+| Feed and Business Hub (optional) | OpenAI product feed spec, Business Hub | Business claimed, profile verified, feed with stable item IDs (US schema at launch) |
 
 For non-store businesses (booking, SaaS, services), replace `Product` with the matching schema.org type (`Service`, `Offer`, `Event`, `LodgingBusiness`, `SoftwareApplication`) and the action path with booking, trial or sign-up.

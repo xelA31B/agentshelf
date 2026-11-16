@@ -7,7 +7,7 @@ description: >
   a website. Also triggers on the same requests in Russian ("протестируй магазин как ИИ-агент") or
   Hungarian.
 metadata:
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Agent Shopping Test
