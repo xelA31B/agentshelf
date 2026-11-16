@@ -1,0 +1,283 @@
+{
+ "checks": [
+  {
+   "id": "ACC-01",
+   "category": "access",
+   "level": "REQUIRED",
+   "critical": true,
+   "status": "PASS"
+  },
+  {
+   "id": "ACC-02",
+   "category": "access",
+   "level": "EXPERIMENTAL",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "ACC-03",
+   "category": "access",
+   "level": "RECOMMENDED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "ACC-04",
+   "category": "access",
+   "level": "REQUIRED",
+   "critical": true,
+   "status": "PASS"
+  },
+  {
+   "id": "ACC-05",
+   "category": "access",
+   "level": "REQUIRED",
+   "critical": true,
+   "status": "PASS"
+  },
+  {
+   "id": "PRD-01",
+   "category": "product_data",
+   "level": "REQUIRED",
+   "critical": true,
+   "status": "PASS"
+  },
+  {
+   "id": "PRD-02",
+   "category": "product_data",
+   "level": "REQUIRED",
+   "critical": true,
+   "status": "PASS"
+  },
+  {
+   "id": "PRD-03",
+   "category": "product_data",
+   "level": "RECOMMENDED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "PRD-04",
+   "category": "product_data",
+   "level": "RECOMMENDED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "PRD-05",
+   "category": "product_data",
+   "level": "RECOMMENDED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "PRD-06",
+   "category": "product_data",
+   "level": "RECOMMENDED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "PRD-07",
+   "category": "product_data",
+   "level": "REQUIRED",
+   "critical": true,
+   "status": "PASS"
+  },
+  {
+   "id": "POL-01",
+   "category": "policies",
+   "level": "REQUIRED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "POL-02",
+   "category": "policies",
+   "level": "RECOMMENDED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "POL-03",
+   "category": "policies",
+   "level": "REQUIRED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "POL-04",
+   "category": "policies",
+   "level": "RECOMMENDED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "POL-05",
+   "category": "policies",
+   "level": "REQUIRED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "POL-06",
+   "category": "policies",
+   "level": "REQUIRED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "FED-01",
+   "category": "feeds",
+   "level": "OPTIONAL",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "FED-02",
+   "category": "feeds",
+   "level": "RECOMMENDED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "FED-03",
+   "category": "feeds",
+   "level": "RECOMMENDED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "ACT-01",
+   "category": "action_path",
+   "level": "REQUIRED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "ACT-02",
+   "category": "action_path",
+   "level": "REQUIRED",
+   "critical": true,
+   "status": "PASS"
+  },
+  {
+   "id": "ACT-03",
+   "category": "action_path",
+   "level": "RECOMMENDED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "ACT-04",
+   "category": "action_path",
+   "level": "REQUIRED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "ACT-05",
+   "category": "action_path",
+   "level": "RECOMMENDED",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "ACT-06",
+   "category": "action_path",
+   "level": "REQUIRED",
+   "critical": true,
+   "status": "PASS"
+  },
+  {
+   "id": "API-01",
+   "category": "apis",
+   "level": "OPTIONAL",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "API-02",
+   "category": "apis",
+   "level": "RECOMMENDED",
+   "critical": false,
+   "status": "NOT_APPLICABLE"
+  },
+  {
+   "id": "API-03",
+   "category": "apis",
+   "level": "RECOMMENDED",
+   "critical": false,
+   "status": "NOT_APPLICABLE"
+  },
+  {
+   "id": "API-04",
+   "category": "apis",
+   "level": "OPTIONAL",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "API-05",
+   "category": "apis",
+   "level": "OPTIONAL",
+   "critical": false,
+   "status": "PASS"
+  },
+  {
+   "id": "WAL-01",
+   "category": "wallet",
+   "level": "REQUIRED",
+   "critical": true,
+   "status": "NOT_APPLICABLE"
+  },
+  {
+   "id": "WAL-02",
+   "category": "wallet",
+   "level": "REQUIRED",
+   "critical": true,
+   "status": "NOT_APPLICABLE"
+  },
+  {
+   "id": "WAL-03",
+   "category": "wallet",
+   "level": "REQUIRED",
+   "critical": false,
+   "status": "NOT_APPLICABLE"
+  },
+  {
+   "id": "WAL-04",
+   "category": "wallet",
+   "level": "RECOMMENDED",
+   "critical": false,
+   "status": "NOT_APPLICABLE"
+  },
+  {
+   "id": "WAL-05",
+   "category": "wallet",
+   "level": "OPTIONAL",
+   "critical": false,
+   "status": "NOT_APPLICABLE"
+  }
+ ],
+ "path_fully_observed": true,
+ "excluded_categories": [
+  "wallet"
+ ],
+ "expected": {
+  "overall": 100.0,
+  "status": "FINAL",
+  "coverage": 100.0,
+  "categories": {
+   "access": 10.0,
+   "product_data": 10.0,
+   "policies": 10.0,
+   "feeds": 10.0,
+   "action_path": 10.0
+  },
+  "purchase": "NOT_VERIFIED"
+ },
+ "note": "EU-only store: Wallet reported as preparation, category excluded with reason.",
+ "wallet_expected": "INCONCLUSIVE",
+ "name": "07-outside-wallet-market"
+}
